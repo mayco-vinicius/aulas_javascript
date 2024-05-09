@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de CPF</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/w3.css" class="c">
+    <link rel="stylesheet" href="styles/global.css">
+</head>
+
+<body>
+    <div class="w3-container w3-indigo">
+        <h1>Validador de CPF</h1>
+    </div>
+    <div class="w3-display-middle w3-large">
+        <div>
+            <h1 class="w3-margin w3-center w3-text-indigo">
+                <i class="fa fa-shield fa-2x"></i>
+            </h1>
+
+            <form id="frmValidador">
+                <input type="number" id="txtCpf" name="cpf" class="w3-input w3-border w3-light-grey w3-margin"
+                    placeholder="Informe o CPF" required autofocus />
+                <button type="submit" class="w3-button w3-block w3-indigo w3-padding-large w3-margin">Validar</button>
+            </form>
+            
+            <div id="animCarregando" class="w3-hide">
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw w3-text-indigo"></i>
+            </div>
+            
+            <div class="w3-margin">
+                <div id="tagValido" class="w3-tag w3-round w3-green w3-hide" style="padding:3px">
+                    <div class="w3-tag w3-round w3-green w3-border w3-border-white">
+                        CPF Válido!
+                    </div>
+                </div>
+                <div id="tagInvalido" class="w3-tag w3-round w3-red w3-hide" style="padding:3px">
+                    <div class="w3-tag w3-round w3-red w3-border w3-border-white">
+                        CPF Inválido!!!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/cpf.js"></script>
+
+</body>
+
+</html>
