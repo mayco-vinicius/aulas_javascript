@@ -1,0 +1,59 @@
+/* Definindo estilo para o elemento body */
+body{
+    padding: 0; /* Removendo espaços internos do elemento body */
+    margin: 0; /* Removendo espaços externos do elemento body */
+    background-color: black; /* Adicionando um fundo de cor preto */
+}
+
+/* Definindo estilo para a classe painel */
+.painel{
+    display: flex; /* altera o display para flexbox <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flexible_box_layout/Basic_concepts_of_flexbox> */
+    flex-direction: column; /* configurando o flexbox para colunas, há linhas (row) e colunas (column) */
+    justify-content: center; /* alinhando verticalmente no centro */
+    align-items: center; /* alinhando horizontalmente no centro */
+    height: 90vh; /* definindo uma altura fixa para o painel de 90 viewport height <https://www.freecodecamp.org/news/learn-css-units-em-rem-vh-vw-with-code-examples/> */
+}
+
+/* Definindo estilo para a classe conteudo */
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px; /* adicionando espaço interno de top e bottom 20 pixels, left e right 10 pixels */
+    background-image: url("bg-wood.png"); /* adicionando uma imagem de fundo */
+    border-radius: 30px; /* adicionando bordar arredonda de 30 pixels */
+    border: 1px solid rgba(0,0,0,0.5); /* adicionando borda de tamanho 1px estilo sólido e cor rgb+alpha */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5) inset, 5px 5px 1px rgba(255,255,255,0.3); /* adicionando duas sombras interna e externa, left 5px bottom 5px e 10px blur */  
+}
+
+/* Definindo estilo para o elemento h1 dentro que seja filho da classe conteudo */
+.conteudo h1{
+    font-size: 15rem; /* tamanho da fonte relativa. 15 * rem */
+    line-height: 0; /* alterando a altura da linha */
+    color: #ffffff; /* alterando cor da fonte com cor hexadecimal */
+    text-shadow: 5px 5px 1px rgba(0,0,0,0.4); /* adicionando sombra ao texto *semelhante ao box-shadow */
+}
+
+/* Definindo estilo para o elemento button filho da classe conteudo */
+.conteudo button{
+    background-color: #6f6f6f; /* cor do fundo do botão */
+    color: white; /* cor da fonte do botão */
+    font-size: 1.5rem; /* tamanho da fonte do botão com valores relativos */
+    text-shadow: 1px 1px 1px #3f3f3f; /* adicionando sombra ao texto *semelhante ao box-shadow */
+    border: 0; /* removendo as bordas padrão do botão */
+    border-radius: 50px; /* arredondano as bordas do botão */
+    padding: 25px; /* adicionando espaço interno */
+    margin: 10px 20px;  /* adicionando espaço externo 1px vertical e 20px horizontal */
+    box-shadow: -2px -2px 2px #333 inset, 5px 5px 1px rgba(0,0,0,0.3); /* adicionando sombras */
+    cursor: pointer; /* alterando o cursor do mouse (pointer é a *mão)*/
+}
+
+/* Definindo estilo para evento active (click) do elemento button filho da classe conteudo */
+.conteudo button:active{
+    box-shadow: -2px -2px 2px #cfcfcf, 3px 3px 1px rgba(0,0,0,0.5) inset; /* alterando sombras no momento do evento */
+}
+
+/* Definindo estilo para evento hover (passar o mouse em cima) do elemento button filho da classe conteudo */
+.conteudo button:hover{
+    background-color: #696969; /* altera a cor do fundo */
+}
