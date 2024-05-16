@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link rel="stylesheet" href="styles/w3.css" class="c">
     <link rel="stylesheet" href="styles/global.css">
 </head>
-
 <body>
     <div class="w3-container w3-indigo">
         <h1>Validador de CPF</h1>
@@ -25,18 +23,18 @@
                     placeholder="Informe o CPF" required autofocus />
                 <button type="submit" class="w3-button w3-block w3-indigo w3-padding-large w3-margin">Validar</button>
             </form>
-            
-            <div id="animCarregando" >
+
+            <div id="animCarregando" class="w3-hide">
                 <i class="fa fa-spinner fa-pulse fa-3x fa-fw w3-text-indigo"></i>
             </div>
-            
+
             <div class="w3-margin">
-                <div id="tagValido" class="w3-tag w3-round w3-green" style="padding:3px">
+                <div id="tagValido" class="w3-tag w3-round w3-green w3-hide" style="padding:3px">
                     <div class="w3-tag w3-round w3-green w3-border w3-border-white">
                         CPF Válido!
                     </div>
                 </div>
-                <div id="tagInvalido" class="w3-tag w3-round w3-red" style="padding:3px">
+                <div id="tagInvalido" class="w3-tag w3-round w3-red w3-hide" style="padding:3px">
                     <div class="w3-tag w3-round w3-red w3-border w3-border-white">
                         CPF Inválido!!!
                     </div>
@@ -45,9 +43,8 @@
         </div>
     </div>
 
-    <script src="scripts/app.js"></script>
     <script src="scripts/cpf.js"></script>
+    <script src="scripts/app.js"></script> 
 
 </body>
-
 </html>
